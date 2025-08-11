@@ -2,7 +2,7 @@
 # COURSE II BOT - BACKEND SCRIPT
 #
 # This script powers the backend for the @Courser08bot on Telegram,
-# managing student enrollment and course access.
+# managing student enrollment and certificate requests.
 #
 # Author: Gemini, your Coding Partner
 #
@@ -14,6 +14,7 @@ import os
 import requests
 import base64
 import json
+import threading
 from telegram import Update, KeyboardButton, ReplyKeyboardMarkup, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import (
     ApplicationBuilder,
